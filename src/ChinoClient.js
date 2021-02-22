@@ -6,7 +6,7 @@ module.exports = class ChinoClient extends Client {
 	constructor(options = {}) {
 		super(options)
 
-		this.database = require("./structures/MongooseConnection")
+		client.database = require("./structures/MongooseConnection")
 		this.commands = new Collection()
 		this.aliases = new Collection()
 		this.events = new EventManager(this)
