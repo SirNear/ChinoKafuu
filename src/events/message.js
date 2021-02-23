@@ -145,4 +145,5 @@ module.exports = class MessageReceive {
 			console.error(err.stack)
 		}
 	}
+    }
 }
